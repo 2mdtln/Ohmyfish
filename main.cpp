@@ -2,15 +2,14 @@
 #include <thread>
 
 std::string mes = "Hello, World!";
-int i;
 int main()
 {
-    while(i < mes.length())
+    for (int i = 0; i < mes.length(); i++)
     {
         std::cout << mes[i] << std::flush;
-        i++;
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
     std::cout << std::endl;
     return 0;
 }
