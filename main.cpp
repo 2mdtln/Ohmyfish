@@ -1,15 +1,24 @@
 #include <iostream>
 #include <thread>
 
-std::string mes = "Hello, World!";
 int main()
 {
-    for (int i = 0; i < mes.length(); i++)
+    std::string output;
+    for (char target : "Hello, World!")
     {
-        std::cout << mes[i] << std::flush;
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        if (target == ' ')
+        {
+            std::cout << (output += ' ') << std::flush;
+            continue;
+        }
+        for (char current = 32; current != target; current = (current == 126 ? 32 : current + 1))
+        {
+            std::cout << '\r' << output << current << std::flush;
+            std::this_thread::sleep_for(std::chrono::milliseconds(6));
+        }
+        output += target;
+        std::cout << '\r' << output << std::flush;
     }
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
     std::cout << std::endl;
     return 0;
 }
