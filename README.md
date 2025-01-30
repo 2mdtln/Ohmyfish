@@ -10,4 +10,5 @@ Saw [this TikTok](https://www.tiktok.com/@kira_learning/video/740859694986938295
 ## 25-01-29  
 It was entirely AI-generated... I translated it to C (again, with AI) and started learning C from [this YouTube video](https://www.youtube.com/watch?v=87SH2Cn0s9A) instead of studying for my college exam 🤦🏻‍♂️
 
-—Bro teaches well :)  
+—Bro teaches well :)
+—I'm trying to not use AI.
