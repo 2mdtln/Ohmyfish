@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 // function prototypes
+// before main()
+
 double average(int x, int y, int z);
 
 int main() {
