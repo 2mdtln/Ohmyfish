@@ -1,8 +1,2 @@
-*
-!*/
-!*.gif
-!*.png
-!*.md
-!*.c
-!*.h
-!*.pdf
+.vscode/
+.ds_store
